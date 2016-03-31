@@ -1,5 +1,3 @@
----
----
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
@@ -69,9 +67,9 @@ $(document).foundation();
       return false;
     });
 
-    if ("{{ site.url }} ".lastIndexOf(location.protocol + '//' + location.hostname) != 0) {
+    if ("http://rightsstatements.org ".lastIndexOf(location.protocol + '//' + location.hostname) != 0) {
       $('body').children('div').first().prepend(
-        $('<div data-alert class="alert-box warning round row">You are seeing a preview of this page. To visit the currently published version, click <a href="{{ site.url}}' + location.pathname +'">here</a>.<a href="#" class="close">&times;</a></div>')
+        $('<div data-alert class="alert-box warning round row">You are seeing a preview of this page. To visit the currently published version, click <a href="http://rightsstatements.org' + location.pathname +'">here</a>.<a href="#" class="close">&times;</a></div>')
       ).foundation();
     }
 
